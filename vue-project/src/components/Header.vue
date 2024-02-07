@@ -50,9 +50,11 @@ nav{
             list-style-type: none;
             gap: 10px;
             li{
+                
                 font-weight: bold;
+                cursor: pointer;
                 &:hover{
-                    color: blue;
+                    color: #0089FF;
                 }
             }
         }
