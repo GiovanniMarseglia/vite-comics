@@ -52,13 +52,13 @@ export default{
 </template>
 
 <style lang="scss" scoped>
-
+@use "../styles/partials/variables.scss" as *;
 .container{
-    background-color: #0781F9;
+    background-color: $blueDC;
     width: 100%;
     padding: 30px;
         div{
-            width: 80%;
+            width: $limit;
             margin: 0 auto;
                 ul{
                     list-style-type: none;

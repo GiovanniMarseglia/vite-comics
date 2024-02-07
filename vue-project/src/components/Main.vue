@@ -19,6 +19,7 @@ export default{
 </template>
 
 <style lang="scss" scoped>
+@use "../styles/partials/variables" as *;
 
 div{
   display: flex;
@@ -28,7 +29,7 @@ div{
   background-color: black;
   .content{
     margin: 0 auto;
-    width: 80%;
+    width: $limit;
       p{
         font-size: 20px;
         color: white;

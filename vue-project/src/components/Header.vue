@@ -35,12 +35,12 @@ export default{
 </template>
 
 <style lang="scss" scoped>
-
+@use "../styles/partials/variables.scss" as *;
 nav{
     display: flex;
     width: 100%;
     div{
-        width: 80%;
+        width: $limit;
         justify-content: space-between;
         display: flex;
         align-items: center;
@@ -50,11 +50,15 @@ nav{
             list-style-type: none;
             gap: 10px;
             li{
+                display: flex;
+                align-items: center;
+                height: 104px;
                 
                 font-weight: bold;
                 cursor: pointer;
                 &:hover{
                     color: #0089FF;
+                    border-bottom: 3px solid $blueDC;
                 }
             }
         }

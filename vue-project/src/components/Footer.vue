@@ -85,6 +85,8 @@ export default{
 </template>
 
 <style lang="scss" scoped>
+@use "../styles/partials/variables.scss" as *;
+
 .containerTwo{
   width: 100%;
   background-image: url("../assets/img/footer-bg.jpg");
@@ -93,7 +95,7 @@ export default{
     div{
       display: flex;
       justify-content: space-between;
-      width: 80%;
+      width: $limit;
       margin: 0 auto;
       .list{
       
@@ -101,17 +103,22 @@ export default{
       justify-content: flex-start;
       gap: 40px;
       margin: 40px 0;
-      ul{
-        
+      ul{ 
         list-style-type: none;
+      
         span{
           font-size: 25px;
           color: white;
-          padding-left: 5px;
+          user-select: none;
+          
         }
         li{
+          cursor: pointer;
           line-height: 2em;
           color: grey;
+          &:hover{
+            color: white;
+          }
         }
       }
     }
@@ -131,7 +138,7 @@ export default{
   background-color: #333333;
   padding: 30px 0;
   .ContainerDeep{
-    width: 80%;
+    width: $limit;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -140,14 +147,14 @@ export default{
       padding: 10px 15px;
       color: white;
       background-color: #33333300;
-      border: 2px solid #0089FF;
+      border: 2px solid $blueDC;
     }
     div{
       display: flex;
       gap: 15px;
       align-items: center;
       span{
-        color: #0089FF;
+        color: $blueDC;
         font-weight: bold;
       }
       i{
