@@ -21,7 +21,7 @@ export default {
     
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 
 div{
     display: flex;
